@@ -1,3 +1,6 @@
+WIP!!!
+Project not completed !!!
+
 General
 =======
 This project will outline how to write a restful service.
@@ -10,6 +13,8 @@ Rest APIs
 
 Misc APIs
 1) Project Lombok (not sure if I would use this API again)
+2) Version 3.1 of the Servlet specification (i.e. JEE 7)
+4) Version 4.1.4 of Spring (plus Java configuration instead of XML)
 
 Notes
 =====
