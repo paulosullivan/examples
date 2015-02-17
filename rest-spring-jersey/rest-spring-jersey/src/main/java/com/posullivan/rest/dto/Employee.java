@@ -1,18 +1,19 @@
 package com.posullivan.rest.dto;
+
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
 
 @JsonAutoDetect(setterVisibility=Visibility.PUBLIC_ONLY)
-public class Customer extends Person {
+public class Employee extends Person {
 	
-	private String phone;
+	private Role role;
 
-	public String getPhone() {
-		return phone;
+	public Role getRole() {
+		return role;
 	}
 
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setRole(Role role) {
+		this.role = role;
 	}
 	
 }
