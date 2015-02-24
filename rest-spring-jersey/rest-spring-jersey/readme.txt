@@ -11,12 +11,13 @@ Rest APIs
 2) JSON
 3) Jackson JSON parser
 
-Misc APIs
-1) Servlet API 3.0 (i.e. JEE 7)
+Misc APIs / Specifications
+1) Java 6 or above
+2) Servlet API 3.0 (i.e. JEE 7)
    3.1 is now available.
-2) Spring Framework 4.1.4 (plus Java configuration instead of XML)
-3) Maven 3
-4) Maven Jetty Plugin v8 (you need to use v8 or above to support the servlet 3.0 API)
+3) Spring Framework 4.1.4 (plus Java configuration instead of XML)
+4) Maven 3
+5) Maven Jetty Plugin v8 (you need to use v8 or above to support Java 6+ and the servlet 3.0 API)
    v9 is now available
 
 Notes
