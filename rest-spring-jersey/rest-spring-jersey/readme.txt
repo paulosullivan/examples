@@ -16,7 +16,7 @@ Misc APIs
    3.1 is now available.
 2) Spring Framework 4.1.4 (plus Java configuration instead of XML)
 3) Maven 3
-4) Maven jetty Plugin v8 (you need to use v8 or above to support the servlet 3.0 API)
+4) Maven Jetty Plugin v8 (you need to use v8 or above to support the servlet 3.0 API)
    v9 is now available
 
 Notes
@@ -27,4 +27,10 @@ Notes
    Therefore, I had to comment out the my custom WebAppInitializer class and retain the web.xml
    This means that you are only using Java config for Spring itself, and not for the JEE stuff.
    
-Local 
+Local Deployment
+================
+No need for a standalone servlet container (given our use of the Maven Jetty Plugin).
+In eclipse, simply right-click on your project -> Run As -> Run Configurations -> Maven Build, and add jetty:run to the Goals textbox.
+Navigate to either http://localhost:8080/TestAppStatusServlet or http://localhost:8080/healthCheck.jsp (to check if the app is up).
+The rest services can be found under http://localhost:8080/rest-spring-jersey/...
+For example => http://localhost:8080/rest-spring-jersey/vehicles
