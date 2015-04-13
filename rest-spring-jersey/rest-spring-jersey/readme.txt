@@ -7,12 +7,16 @@ This project will outline how to write a restful service.
 It uses the following technologies:
 
 Rest APIs
-1) Jersey backed by Spring (i.e. the jersey-spring3 API)
-2) JSON
-3) Jackson JSON parser
+=========
+1) Jersey backed by Spring
+   Actual artifact -> jersey-spring3 v2.15
+	 This artifact requires JSE 7 or above
+2) Jackson JSON parser
+	 Actual artifact -> jersey-media-json-jackson v2.15
 
 Misc APIs / Specifications
-1) Java 6 or above
+==========================
+1) JSE 7 or above is required (due to the jersey-spring artifact)
 2) Servlet API 3.0 (i.e. JEE 7)
    3.1 is now available.
 3) Spring Framework 4.1.4 (plus Java configuration instead of XML)
@@ -35,3 +39,9 @@ In eclipse, simply right-click on your project -> Run As -> Run Configurations -
 Navigate to either http://localhost:8080/TestAppStatusServlet or http://localhost:8080/healthCheck.jsp (to check if the app is up).
 The rest services can be found under http://localhost:8080/rest-spring-jersey/...
 For example => http://localhost:8080/rest-spring-jersey/vehicles
+
+Extra Documentation
+===================
+https://jersey.java.net/project-info/2.15/jersey/project/jersey-spring3/dependencies.html
+https://jersey.java.net/project-info/2.15/jersey/project/json-jackson/dependencies.html
+http://eclipse.org/jetty/documentation/current/what-jetty-version.html
